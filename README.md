@@ -27,3 +27,21 @@ Outputs:
       Under modules folder compute and network resource provisioning files
       .tfvars created for test/dev/prod in root directory
       workspace created for test/dev/prod environment
+      subnet allocated for each environments
+
+      Executing terraform :-
+
+      ###To initialize###
+      terraform init
+      
+      ###create workspaces for test,dev,prod ###
+      example :- terraform workspace create test 
+      
+      ###To goto specific workspace###
+      terraform workspace select test
+            
+      ###To view the plan###
+      terraform plan -var-file test.tfvars 
+      
+      ###To Deploy###
+      terraform apply -var-file test.tfvars 
