@@ -1,0 +1,5 @@
+amiid = "ami-0866a3c8686eaeeba"
+  vmsize = "t2.micro"
+  env = "dev"
+  dbsubnetcidr =  "10.0.104.0/24"
+  websubnetcidr = "10.0.105.0/24"
